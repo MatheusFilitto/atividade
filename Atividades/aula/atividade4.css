@@ -1,0 +1,96 @@
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    font-size: 12px;
+    color: #999;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding: 15px 0;
+   
+ 
+}
+input[type="date"] {
+    width: 100%;
+    font-size: 12px;
+    color: #999;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding: 5px 0;
+    justify-content: flex-end;
+ 
+}
+form{
+    display: flex;
+    flex-direction: column;
+   
+}
+.form1{
+    display: flex;
+    flex-direction: row;
+ 
+   
+}
+.for{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: 75px;
+}
+.for1{
+    display: flex;
+    flex-direction: column;
+   
+ 
+}
+.form2{
+    display: flex;
+    flex-direction: row;
+    
+}
+.for3{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 32px;
+}
+.for4{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 33px;
+}
+.op{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form3{
+    display: flex;
+    flex-direction: row;
+}
+.for5{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 75px;
+}
+.for6{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+    margin: 5px;
+} 
+.btn2{
+    margin: 5px;
+}
+span{
+    color: red;
+}
+

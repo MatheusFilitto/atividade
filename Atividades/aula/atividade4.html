@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividade4.css">
+    <script src="atv4.js" defer></script>
+    <script src="atividade4.js" defer></script>
+    <script src="validar.js" defer></script>
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    
+    <form class="form" id="formProfessor" style="display: none;" onsubmit="return false;">
+        <div class="nome">
+            <label for="nomeProfessor">Nome</label>
+            <input type="text" id="nomeProfessor" placeholder="Digite seu nome completo">
+            <span id="erroNomeProfessor" class="erro"></span>
+        </div>
+ 
+        <div class="form1">
+            <div class="for">
+                <label for="emailProfessor">Email</label>
+                <input type="email" id="emailProfessor" placeholder="Digite seu email">
+                <span id="erroEmailProfessor" class="erro"></span>
+            </div>
+            <div class="for1">
+                <label for="dataNascProfessor">Data de Nascimento</label>
+                <input type="date" id="dataNascProfessor">
+                <span id="erroDataNascProfessor" class="erro"></span>
+            </div>
+        </div>
+ 
+        <div class="form2">
+            <div class="for3">
+                <label for="telefoneProfessor">Telefone Fixo</label>
+                <input type="text" id="telefoneProfessor" placeholder="Digite seu telefone">
+                <span id="erroTelefoneProfessor" class="erro"></span>
+            </div>
+            <div class="for4">
+                <label for="celularProfessor">Celular</label>
+                <input type="text" id="celularProfessor" placeholder="Digite seu celular">
+                <span id="erroCelularProfessor" class="erro"></span>
+            </div>
+
+            <div class="op">
+                <label><input type="radio" name="tipo" value="professor" id="professor" onchange="mostrarFormulario()"> Professor</label>
+                <label><input type="radio" name="tipo" value="aluno" id="aluno" onchange="mostrarFormulario()"> Aluno</label>
+            </div>
+        </div>
+ 
+        <div class="form3">
+            <div class="for5">
+                <label for="area">Área</label>
+                <input type="text" id="area" placeholder="Digite a área">
+                <span id="erroArea" class="erro"></span>
+            </div>
+            <div class="for6">
+                <label for="matricula">Matrícula</label>
+                <input type="text" id="matriculaProfessor" placeholder="Digite sua matrícula">
+                <span id="erroMatriculaProfessor" class="erro"></span>
+            </div>
+        </div>
+ 
+        <label for="lattes">Lattes</label>
+        <input type="text" id="lattes" placeholder="Link do Currículo Lattes">
+        <span id="erroLattes" class="erro"></span>
+
+        <div class="btn">
+            <div class="btn1">
+                <button type="submit" id="submitProfessor">Enviar</button>
+            </div>
+            <div class="btn2">
+                <button type="reset" id="redefinirProfessor">Redefinir</button>
+            </div>
+        </div>
+    </form>
+
+    <form class="form" id="formAluno" onsubmit="return validarFormulario(event)">
+        <div class="nome">
+            <label for="nomeAluno">Nome</label>
+            <input type="text" id="nomeAluno" placeholder="Digite seu nome completo">
+            <span id="erroNomeAluno" class="erro"></span>
+        </div>
+ 
+        <div class="form1">
+            <div class="for">
+                <label for="emailAluno">Email</label>
+                <input type="email" id="emailAluno" placeholder="Digite seu email">
+                <span id="erroEmailAluno" class="erro"></span>
+            </div>
+            <div class="for1">
+                <label for="dataNascAluno">Data de Nascimento</label>
+                <input type="date" id="dataNascAluno">
+                <span id="erroDataNascAluno" class="erro"></span>
+            </div>
+        </div>
+ 
+        <div class="form2">
+            <div class="for3">
+                <label for="telefoneAluno">Telefone Fixo</label>
+                <input type="text" id="telefoneAluno" placeholder="Digite seu telefone">
+                <span id="erroTelefoneAluno" class="erro"></span>
+            </div>
+            <div class="for4">
+                <label for="celularAluno">Celular</label>
+                <input type="text" id="celularAluno" placeholder="Digite seu celular">
+                <span id="erroCelularAluno" class="erro"></span>
+            </div>
+
+            <div class="op">
+                <label for="professor"><input type="radio" name="tipo" value="professor" id="professor" onchange="mostrarFormulario()"> Professor</label>
+                <label for="aluno"><input type="radio" name="tipo" value="aluno" id="aluno" onchange="mostrarFormulario()"> Aluno</label>
+            </div>
+        </div>
+ 
+        <div class="form3">
+            <div class="for5">
+                <label for="curso">Curso</label>
+                <input type="text" id="curso" placeholder="Digite o curso">
+                <span id="erroCurso" class="erro"></span>
+            </div>
+            <div class="for6">
+                <label for="matriculaAluno">Matrícula</label>
+                <input type="text" id="matriculaAluno" placeholder="Digite sua matrícula">
+                <span id="erroMatriculaAluno" class="erro"></span>
+            </div>
+        </div>
+ 
+        <div class="btn">
+            <div class="btn1">
+                <button type="submit" id="submitAluno">Enviar</button>
+            </div>
+            <div class="btn2">
+                <button type="reset">Redefinir</button>
+            </div>
+        </div>
+    </form>
+ 
+</body>
+</html>
