@@ -1,4 +1,4 @@
-// Classe Pessoa
+
 class Pessoa {
   constructor(nome, email, dataNascimento, telefoneFixo, telefoneCelular, matricula) {
     this.nome = nome;
@@ -10,7 +10,7 @@ class Pessoa {
   }
 }
 
-// Classe Professor (herda de Pessoa)
+
 class Professor extends Pessoa {
   constructor(nome, email, dataNascimento, telefoneFixo, telefoneCelular, matricula, areaAtuacao, lattes) {
     super(nome, email, dataNascimento, telefoneFixo, telefoneCelular, matricula);
@@ -19,7 +19,7 @@ class Professor extends Pessoa {
   }
 }
 
-// Classe Aluno (herda de Pessoa)
+
 class Aluno extends Pessoa {
   constructor(nome, email, dataNascimento, telefoneFixo, telefoneCelular, matricula, curso) {
     super(nome, email, dataNascimento, telefoneFixo, telefoneCelular, matricula);
@@ -36,7 +36,7 @@ function validarFormulario() {
   const telefoneCelularValido = validarCelular();
   const matriculaValida = validarMatricula();
 
-  // Se todos os campos forem válidos
+
   if (nomeValido && emailValido && dataValida && telefoneFixoValido && telefoneCelularValido && matriculaValida) {
       const tipoSelecionado = document.querySelector('input[name="tipo"]:checked')?.value;
       const nome = document.getElementById("nomeProfessor")?.value || document.getElementById("nomeAluno")?.value;
