@@ -17,7 +17,7 @@
         let maleCount = 0;
         let femaleCount = 0;
 
-        // Selecionar o contêiner principal
+        
         const app = document.getElementById('app');
 
         // Estilização principal
